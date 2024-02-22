@@ -1,0 +1,86 @@
+body {
+    font-family: sans-serif;
+}
+
+.input-container {
+    display: flex;
+    position: relative;
+}
+
+.search-input {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+}
+
+.search-input input {
+    border: none;
+    height: 20px;
+    padding: 5px;
+    width: 100%;
+}
+
+.search-input input:focus {
+    outline: none;
+}
+
+.suggestion-list {
+    max-height: 300px;
+    overflow-y: auto;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.suggestion-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 8px 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+.suggestion-list li:last-child {
+    border-bottom: none;
+}
+
+.suggestion-list li:hover {
+    background-color: #ccc;
+}
+
+.suggestion-list li img {
+    height: 20px;
+}
+
+.user-pill {
+    height: 20px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: black;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+
+}
+
+.user-pill img {
+    height: 100%;
+}
+
+.suggestion-list li.active {
+    background-color: #ccc;
+}
+.width-98{
+    width: 98%;
+}
