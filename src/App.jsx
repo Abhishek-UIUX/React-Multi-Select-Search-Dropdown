@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "./App.css";
-import Pill from "./components/pill";
+import Pill from "./components/Pill";
 
 function App() {
   const [inputValue, setInputValue] = useState("");
